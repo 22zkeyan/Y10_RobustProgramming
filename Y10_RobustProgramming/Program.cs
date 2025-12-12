@@ -66,9 +66,21 @@
             password = Console.ReadLine()!;
 
         }
+        static void SecretPassword()
+        {
+            string password = Console.ReadLine()!;
+            if (password == "secret")
+            {
+                Console.WriteLine("Welcome");
+            }
+            else
+            {
+                Console.WriteLine("Not welcome");
+            }
+        }
         static void Main(string[] args)
         {
-            VerifyDetails();
+            SecretPassword();
         }
     }
 }
